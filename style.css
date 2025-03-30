@@ -1,0 +1,88 @@
+body {
+    font-family: Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.split-screen, .layer, .content-wrap {
+    width: 100vw;
+    height: 100vh;
+    min-height: 30em;
+}
+
+.split-screen {
+    position: relative;
+    overflow: hidden;
+}
+
+.layer {
+    position: absolute;
+    overflow: hidden;
+}
+
+.content-wrap {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5em;
+}
+
+.layer img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 0;
+}
+
+.layer::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.right {
+    z-index: 1;
+    color: #fff539;
+}
+
+.left {
+    z-index: 2;
+    width: 50vw;
+    color: #fff;
+    border-right: 8px #fff539 solid;
+}
+
+.layer h1 {
+    max-width: 9em;
+    /*Old browser fallback*/
+    font-size: 3em;
+    /*Responsive text with min and max limit*/
+    font-size: clamp(3em, 7vw, 7em);
+    line-height: 1em;
+}
+
+.layer .text {
+    z-index: 1;
+}
+
+.layer .text p {
+    margin-top: 1.5em;
+    max-width: 400px;
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
