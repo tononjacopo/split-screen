@@ -4,7 +4,7 @@
 [![MIT License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 [![Version](https://img.shields.io/badge/version-1.0.0-orange)](https://github.com/tononjacopo/split-screen/releases)
 
-A simple split-screen animation made with JavaScript.
+A simple split-screen animation made with JavaScript
 
 ## 🌐 Live Demo
 
