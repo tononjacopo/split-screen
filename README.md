@@ -14,7 +14,7 @@ Check out the live demo here: [Split Screen Animation](https://www.tononjacopo.c
 
 - ✅ **Smooth animation** – Elegant transitions between sections 🎞️
 - ✅ **Responsive design** – Optimized for different screen sizes 📱💻
-- ✅ **Easy implementation** – Clean and well-documented code 🧑‍💻 
+- ✅ **Easy implementation** – Clean and well-documented code 🧑‍💻
 
 ## 📸 Screenshot
 
